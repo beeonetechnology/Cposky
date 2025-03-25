@@ -51,8 +51,8 @@
     <!-- Spinner End -->
 
     <!-- Navbar start -->
-    <div class="container-fluid fixed-top">
-      <div class="container topbar d-none d-lg-block">
+    <div class="container-fluid fixed-top main-navbar ">
+      <div class="container topbar d-none d-lg-block ">
         <div class="d-flex justify-content-center">
           <div class="top-info text-center">
             <small class="me-3">
@@ -69,7 +69,7 @@
       </div>
 
       <div class="container px-0">
-        <nav class="navbar navbar-light bg-white navbar-expand-xl">
+        <nav class="navbar  navbar-expand-xl">
           <!-- Logo with size -->
           <a href="index.html" class="navbar-brand">
             <img
@@ -107,12 +107,31 @@
     <div class="container-fluid py-5 mb-5 hero-header">
       <div class="container py-5">
         <div class="row g-5 align-items-center">
+         
           <div class="col-md-12 col-lg-7">
-            <h4 class="mb-3" style="color: rgb(217, 47, 129)">Memories Made</h4>
-            <h1 class="mb-5 display-3" style="color: rgb(113, 0, 154)">
+            <h4 class="mb-3" style="color: rgb(217, 47, 129); animation: fadeInUp 1.5s ease-in-out;">
+              Memories Made
+            </h4>
+            <h1 class="mb-5 display-3" style="color: rgb(113, 0, 154); animation: fadeInUp 2s ease-in-out;">
               Tangible with Personalized Creations
             </h1>
           </div>
+          
+          <style>
+            @keyframes fadeInUp {
+              from {
+                opacity: 0;
+                transform: translateY(50px);
+              }
+              to {
+                opacity: 1;
+                transform: translateY(0);
+              }
+            }
+          </style>
+          
+        
+
           <div class="col-md-12 col-lg-5">
             <div
               id="carouselId"
@@ -159,7 +178,7 @@
                         transform: translate(-50%, -50%);
                         background-color: rgba(0, 0, 0, 0.5);
                       "
-                      >Custom Creations</a
+                      >all custom products</a
                     >
                   </div>
 
@@ -573,6 +592,8 @@
     <!-- Fruits Shop End -->
 
 
+
+
 <!-- Banner Section Start-->
 <div class="container-fluid banner bg-secondary my-5">
   <div class="container py-5">
@@ -583,29 +604,44 @@
           <p class="fw-normal display-3 text-dark mb-4">In Our Store</p>
           <p class="mb-4 text-dark">
             Delight your loved ones with our beautifully curated gift hampers, perfect for every occasion.
-Filled with premium products, each hamper is designed to bring joy and celebrate special moments.
-Customize your hamper to add a personal touch that makes every gift memorable.
+            Filled with premium products, each hamper is designed to bring joy and celebrate special moments.
+            Customize your hamper to add a personal touch that makes every gift memorable.
           </p>
           <a href="#" class="banner-btn btn border-2 border-white rounded-pill text-dark py-3 px-5">BUY</a>
         </div>
       </div>
       
-      <!-- Image Section with Size -->
+      <!-- Image Section with Infinite Animation -->
       <div class="col-lg-6">
         <div class="position-relative">
           <img
             src="img/gift.png"
             class="img-fluid rounded"
-            style="width: 500px; height: 500px; object-fit: cover;"
+            style="width: 500px; height: 500px; object-fit: cover; animation: float 3s ease-in-out infinite;"
             alt="Gift"
           />
-
         </div>
       </div>
     </div>
   </div>
 </div>
 <!-- Banner Section End -->
+
+<!-- Floating Animation -->
+<style>
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+</style>
+
 
 
 
